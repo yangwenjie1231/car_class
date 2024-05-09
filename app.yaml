@@ -1,0 +1,11 @@
+id: car_class
+name: car_class
+version: 1.0.3
+author: ywj
+icon: app.png
+desc: 车辆类型检测
+files:
+  - main.py
+  - model_120086.cvimodel
+  - model_120086.mud
+  - ret.png
