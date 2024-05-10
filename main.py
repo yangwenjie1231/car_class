@@ -1,10 +1,10 @@
 from maix import camera, display, image, nn, app,time,touchscreen
 
-detector = nn.YOLOv5(model="/root/models/model_120086.mud")
+detector = nn.YOLOv5(model="./model_120086.mud")
 cam = camera.Camera(detector.input_width(), detector.input_height(), detector.input_format())
 dis = display.Display()
 ts = touchscreen.TouchScreen()
-stop_app_img = image.load("/root/models/ret.png")
+stop_app_img = image.load("./ret.png")
 while not app.need_exit():
     img = cam.read()
     img.draw_image(0, 0, stop_app_img)
